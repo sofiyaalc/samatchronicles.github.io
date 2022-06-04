@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>Samat Chronicles: Home</title>
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Cueno, Del Rosario, Santos, & Sera Jose">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="revised" content="06-03-2022">
+		
+		<link rel="icon" type="image/ico" href="https://lh3.googleusercontent.com/xyUERLIJcY8tKefd1Loa9Fx7Wro-kq_hvwBwlAcB5alFwpxClawCnvOAtZ-DpgpeMIk8ym31AkvJ-pL-5MzASq2L5VkUXPf3R6bqU3fOkD2X7c-lYXbeceUNp2_awnqCerWMZrZt1A=w2400">
+		 <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+		
+		<style>
+			.ChoosePage:hover {
+				border-bottom: 4px solid black;
+			}
+			
+			.QuickLink:hover {
+				border-bottom: 2px solid #FFFFFF;
+			}
+			
+			body {
+				background-color: #F4F4EE;
+				padding: 30px;
+			}
+			
+			#logo {
+				text-align: center;
+				padding-left: 60px;
+			}
+			
+			#nav {
+				text-align: center;
+				font-size: x-large;
+				font-weight: bold;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 20px;
+				width: 250px;
+			}
+			
+			.nowpage {
+				border-bottom: 4px solid black;
+				margin-right: 5px;
+			}	
+			
+			ul {
+				display: flex;
+				align-items: stretch;
+				list-style-type: none;
+				overflow: hidden;
+				justify-content: space-between;
+			}
+			
+			li {
+				flex: 0 1 auto; 
+				list-style-type: none;
+				float: Left;
+			}
+			
+			li a {
+				text-align: center;
+				text-decoration: none;
+				color: black;
+			}
+			
+			.separate {
+				text-align: center;
+      
+			}
+			
+			.rowh {
+				text-align: center;
+				font-family: 'Arvo', serif;
+				font-weight: bold;
+			}
+			
+			#genresrow, #salerow {
+				text-align: center;
+			}
+			
+			#genresrow a {
+				text-decoration: none;
+				color: black;
+			}
+			
+			.card-title {
+				text-align: center;
+				font-family: 'Arvo', serif;
+				font-weight: bold;
+			}
+			
+			.romancetitle, .thrillertitle, .fantasytitle, .scifititle, .customertitle {
+				font-family: 'Arvo', serif;
+				font-weight: bold;
+				text-align: center;
+			}
+			
+			#customerrow {
+				margin-bottom: 30px;
+			}
+			
+			.card {
+				background-color: #F4F4EE;
+				border: 0px;
+			}
+			
+			.customercard {
+				background-color: white;
+				border: 1px solid;
+			}
+			
+			.customername {
+				font-weight: bold;
+				font-size: 20px;
+				padding-left: 10px;
+			}
+			
+			.cartimg {
+				margin-right: 10px;
+			}
+			
+			#footer {
+				background-color: black;
+				padding: 30px;
+				color: white;
+			}
+			
+			#footer a {
+				text-decoration: none;
+				color: white;
+			}
+			
+			#footer1 {
+				text-align: center;
+			}
+
+			.headerline {
+				height: 2px;
+				background-color: #FFFFFF;
+				border: none;
+			}
+			
+			#nav a {
+				text-decoration: none;
+				color: black;
+			}
+			
+			.productrow {
+				text-align: center;
+				background-color: #F4F4EE;
+				min-height: 370px;
+				border-radius: 20px;
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+
+			.productpic {
+				height: 380px;
+				margin: auto;    
+				display: block;
+			}
+			
+			.cartbtn {
+				border-radius: 5px;
+				padding: 7px;
+				border: 2px solid #BFA891;
+				color: black;
+				background-color: transparent;
+				transition: 0.4s;
+			}
+
+			.cartbtn:hover {
+				background-color: #BFA891;
+				color: black;
+			}
+			
+			.cartimg {
+				margin-right: 10px;
+			}
+
+			.carousel-indicators{
+				bottom:-20px;
+			}
+
+			.carousel-inner {
+				margin-bottom:20px;
+			}
+			
+			.submitbtn {
+				border-radius: 5px;
+				padding: 7px;
+				border: 2px solid #BFA891;
+				color: black;
+				background-color: transparent;
+			}
+			
+			.total {
+				padding: 10px;
+				font-weight: bold;
+				font-size: 18px;
+				background-color: #BFA891;
+			}
+			
+			.cartlist {
+				color: black;
+				background-color: transparent;
+				padding: 15px;
+			}
+			
+			.productt {
+				padding: 10px;
+				border: 2px solid #BFA891;
+			}
+			
+			.deletebtn {
+				color: red;
+				padding-right: 5px;
+				display: inline;
+				font-weight: bold;
+				float: right;
+				cursor: pointer;
+			}
+			
+			.productname {
+				padding: 5px;
+				display: inline;
+			}
+			
+			.carttitle {
+				display: inline;
+			}
+			.cartt {
+				margin-bottom: 10px;
+			}
+			
+			.carousel a{
+			text-decoration: none;
+			}
+			
+			.genreimg{
+			max-width:100%;
+            margin: auto;    
+            display: block;
+			}
+			
+			.genrerow{
+			text-align: left;
+			}
+			
+			.cfpic{
+			height: 50px;
+			border-radius: 50%;
+			margin: auto;    
+            display: block;
+			}
+			
+			.fdname{
+			text-align: left;
+			padding-top: 5px;
+			}
+			
+			.cf{
+			border: solid;
+			border-width:thin;
+			border-color: #333;
+			border-radius: 5px;
+			background: rgb(255,255,255);
+            background: linear-gradient(90deg, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 20%);
+			}
+			
+			.cfpicc{
+			padding-top: 10px;
+			}
+			
+			.cfname{
+			padding-top: 10px;
+			}
+			
+			.starslay{
+			max-width: 100%;
+			max-height: 33px;
+			margin: auto;    
+            display: block;
+			}
+			
+			.submitbtn {
+				transition: 0.4s;
+			}
+
+			.submitbtn:hover {
+				background-color: #BFA891;
+				color: black;
+			}
+			
+			.input-group-text {
+				background-color: #BFA891;
+			}
+			
+			.form-control:focus {
+				border-color: #BFA891; 
+				-webkit-box-shadow: 0px 0px 10px #BFA891;
+				box-shadow: 0px 0px 10px #BFA891; 
+			}
+			@media only screen and (max-width: 775px) {
+            .carousel .col-sm-4{
+             width: 100%;
+            }
+            }			
+			
+			
+		</style>
+	</head>
+	
+	<body>
+		<div id="logo"><img src="https://lh3.googleusercontent.com/8mRkc8QYm0CmvvYsZvS8fJXNpwRpJ6mUv-k8FQzdZMfd3r5gaqI1NF9WhYv0yg8Jph0L8TDb780BljUG5c973zO8MMSIqar7BlDhKXr2fOSZWxYw0idn_H1OdstzdZjxxvOxwqBBig=w2400" alt="This is an image." height=100></div>
+		<div id="nav">
+			<ul>
+				<li><img src="https://lh3.googleusercontent.com/AuUbwDhJJ6sCwPpSZSmKJc_pjMKyguVShgpZezFiDrY3NKfCRjrldpz_y4kV_O-8fLsZNIGkMsZWy-lPdgMPq-iLBAqHI8lUkjIJqUX2aB6QvkFJYqKQzWsrNDrbFjP1wPhKUSNG9Q=w2400" alt="This is an image." style="height: 30px; transform: scaleX(-1);">&nbsp;<a href="index.html"><span class="nowpage ChoosePage">Home</span></a></li>
+				<li><a href="aboutus.html" class="ChoosePage">About Us</a></li>
+			</ul> 
+		</div>
+		<div id="salerow">
+			<div class="row">
+				<div class="col-1"></div>
+				<div class="col-10">
+					<img src="https://lh3.googleusercontent.com/lFn5sG3bwj3tqkCyE7upzBDKANgr4R2apHkYLTH0sKxhwHwpt7fOj7O5eRpLtJIORxKXWiW8UfPSX_Kju9D_Czd5PbTBCIFlcbYAKgYm33CT1xONGVLODmJPgATBlzDhK9gBwwFI4w=w2400" alt="This is an image." class="img-fluid">
+				</div>
+				<div class="col-1"></div>
+			</div>
+		</div>
+		<div class="separate">
+		  <div class="row genrerow">
+			<div class="col-12">
+				<img src="https://lh3.googleusercontent.com/xkir0qRr1G7knsHHc7EsdCHm3U5T16I_tcLSCP29t4iIgVpyCrCwJsdg96ohX6LhCwRu_qjG4AVH1pEKTvlI5u6ADQO7rXSmkUnFPubch0NrbLCgkSTJ1NR4uT537k9nf7o2kWJQbw=w2400" class="img-fluid" alt="This is an image.">
+			</div>
+		  </div>
+		</div>
+		<div id="genresrow">
+			<h2 class="rowh">Available Genres</h2>
+			<br>
+			<div class="row no-gutters">
+			
+				<div class="col-sm-3 p-2">
+				<div class="container-fluid">
+					<a href="#romance">
+					<img class="genreimg img-fluid" src="https://lh3.googleusercontent.com/vjB9odX5ruRncsdV4U8CsLAxgIav56sA4x1jVHtQs__i2Hgi2tRfi1UoWUrU6S6nJpBVhLLWX2RlrzlqRKIiKiDFrdRaIR6dhfnEc25IkdkCsJWn0TN6wc5xWC-YwiZi96fAD8Nptg=w2400" alt="This is an image.">
+					<h5>Romance</h5>
+					</a>
+					</div>
+				</div>
+				
+				<div class="col-sm-3 p-2">
+				<div class="container-fluid">
+					<a href="#fantasy">
+					<img class="genreimg" src="https://lh3.googleusercontent.com/aKEnzcgU7W7Q9xnlF_oKLONAr3PdAWYbR5R4LR4s6FWVbfKXE9UUYWsn47ThxS8868uTPcPoB8kanoYoaEo7VVkKOFDuHqqx5nQisO4uKmkLT_e8nWmFdlZbbIQerHkOFrb-fMCw5g=w2400" alt="This is an image.">
+					<h5>Fantasy</h5>
+					</a>
+					</div>
+				</div>
+				
+				<div class="col-sm-3 p-2">
+				<div class="container-fluid">
+					<a href="#scifi">
+					<img class="genreimg" src="https://lh3.googleusercontent.com/XvRnXYf_wYbPRVtJSXR9y4i48aNvcWrA_13y9Wb0MKPXmZLqqccpcB4I26H8-vWeQ8QWUrnrqZ6UMs7NfdDDhaOjCYxTYzRvM0VtK4DVWE0yptwD-Cytp5JbQCPI7a8ci3ZWuXoKBQ=w2400" alt="This is an image.">
+					<h5>Sci-Fi</h5>
+					</a>
+					</div>
+				</div>
+				
+				<div class="col-sm-3 p-2">
+				<div class="container-fluid">
+					<a href="#thriller">
+					<img class="genreimg" src="https://lh3.googleusercontent.com/s26qyZWE3UG6YGb6axWXMQ9T3hYVw4hZ3wqYiMdukOti8TYvN7cLyDmdyxRpUbAFismZ8Av31C47ACpcLYDcONEm3fAONPy4kEfTovIsl8691L0Kyb4nh6oyEp_4cqZRgBG4duhtYw=w2400" alt="This is an image.">
+					<h5>Thriller</h5>
+					</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="separate">
+		  <div class="row">
+			<div class="col-12">
+				<img src="https://lh3.googleusercontent.com/xkir0qRr1G7knsHHc7EsdCHm3U5T16I_tcLSCP29t4iIgVpyCrCwJsdg96ohX6LhCwRu_qjG4AVH1pEKTvlI5u6ADQO7rXSmkUnFPubch0NrbLCgkSTJ1NR4uT537k9nf7o2kWJQbw=w2400" class="img-fluid" alt="This is an image.">
+			</div>
+		  </div>
+		</div>
+		
+		
+		
+		
+    
+    
+    
+		<div class="container"><h1 id="romance" class="romancetitle">Romance</h1></div>
+		<div id="demo" class="carousel carousel-dark slide" data-interval="false">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+				<button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+				<button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+				<button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+				<button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+				<button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row productrow py-2">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-4 piccol"><img class="d-block productpic py-3" src="https://i.pinimg.com/originals/fc/b7/4d/fcb74dc207c6b472c3e76519a7210bee.jpg" alt="First slide"></div>
+						<div class="col-sm-4  py-3">
+							<h3>Pride and Prejudice</h3>
+							
+							<h6>By Jane Austen</h6>
+							
+							<p class="px-2">Pride and Prejudice follows the turbulent relationship between Elizabeth Bennet, the daughter of a country gentleman, and Fitzwilliam Darcy, a rich aristocratic landowner. They must overcome the titular sins of pride and prejudice in order to fall in love and marry<a href="https://www.britannica.com/topic/Pride-and-Prejudice">...</a></p>
+							
+							<img alt="Five-star rating" src="https://lh3.googleusercontent.com/WD2x1bCo84slnvumThEzDD3VS9YjstpLb-3_GJowZ8Cpo9BO2ZKK1IwsIEoBBQIIL6irdifXa4RlckVeZUNPTROMs7qfqVY7-jUi6qK6ABw29ih1cccOULfEkDteClzrfwGKqwTvhg=w2400" style="height: 25px;">
+							
+							<br><br>
+							
+							<button onclick="AddPrideandPrejudice()" class="cartbtn"><img alt="Add to cart icon" src="https://lh3.googleusercontent.com/iZzZirArLDZR_QKq78qVhaQ-kTf8nx1_hlS-YZOTWvEtKHsVV4FQ17s3V-7L2R1-wBckhU7_CY3l2_D7GgUC-vgt8NgFslJSHJQbfsCmrk96Lkk1lvMDYu0az6UVuUpdhe4qk6MeBQ=w2400" class="cartimg" style="height: 40px;">PhP 600.00</button>					
+						</div>
+						<div class="col-sm-2"></div>
+					</div>    
+				</div>
+				<div class="carousel-item">
+					<div class="row productrow py-2">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-4"><img class="d-block productpic py-3" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1470427482l/27362503._SY475_.jpg" alt="First slide"></div>
+						<div class="col-sm-4 py-3">
+							<h3>It Ends With Us</h3>
+							
+							<h6>By Colleen Hoover</h6>
+							
+							<p>It Ends with Us is a book that follows a girl named Lily who has just moved and is ready to start her life after college. Lily then meets a guy named Ryle and she falls for him. As she is developing feelings for Ryle, Atlas, her first love, reappears and challenges the relationship between Lily and Ryle<a href="https://www.njkinnysblog.com/romance-book-review-it-ends-with-us-by-colleen-hoover/#:~:text=It%20Ends%20With%20Us%20by,mark%20on%20a%20reader's%20heart.">...</a></p>
+							
+							<img alt="Five-star rating" src="https://lh3.googleusercontent.com/WD2x1bCo84slnvumThEzDD3VS9YjstpLb-3_GJowZ8Cpo9BO2ZKK1IwsIEoBBQIIL6irdifXa4RlckVeZUNPTROMs7qfqVY7-jUi6qK6ABw29ih1cccOULfEkDteClzrfwGKqwTvhg=w2400" style="height: 25px;">
+							
+							<br><br>
+							
+							<button onclick="AddItEndsWithUs()" class="cartbtn"><img alt="Add to cart icon" src="https://lh3.googleusercontent.com/iZzZirArLDZR_QKq78qVhaQ-kTf8nx1_hlS-YZOTWvEtKHsVV4FQ17s3V-7L2R1-wBckhU7_CY3l2_D7GgUC-vgt8NgFslJSHJQbfsCmrk96Lkk1lvMDYu0az6UVuUpdhe4qk6MeBQ=w2400" class="cartimg" style="height: 40px;">PhP 600.00</button>					
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="carousel-item">
+					<div class="row productrow py-2">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-4"><img class="d-block productpic py-3" src="https://almabooks.com/wp-content/uploads/2016/10/9781847495877-768x1196.jpg" alt="First slide"></div>
+						<div class="col-sm-4 py-3">
+							<h3>Little Women</h3>
+							
+							<h6>By Ella Bailey</h6>
+							
+							<p>The story tells of how the sisters grow up, find love and find their place in the world. Four sisters and their mother at home. Their father is fighting in the war. Louisa May Alcott semi-autobiographical novel has captured young women and the young at heart for years<a href="https://en.wikipedia.org/wiki/Little_Women#:~:text=The%20story%20follows%20the%20lives,autobiographical%20or%20semi%2Dautobiographical%20novel.">...</a></p>
+							
+							<img alt="Five-star rating" src="https://lh3.googleusercontent.com/WD2x1bCo84slnvumThEzDD3VS9YjstpLb-3_GJowZ8Cpo9BO2ZKK1IwsIEoBBQIIL6irdifXa4RlckVeZUNPTROMs7qfqVY7-jUi6qK6ABw29ih1cccOULfEkDteClzrfwGKqwTvhg=w2400" style="height: 25px;">
+							
+							<br><br>
+							
+							<button onclick="AddLittleWomen()" class="cartbtn"><img alt="Add to cart icon" src="https://lh3.googleusercontent.com/iZzZirArLDZR_QKq78qVhaQ-kTf8nx1_hlS-YZOTWvEtKHsVV4FQ17s3V-7L2R1-wBckhU7_CY3l2_D7GgUC-vgt8NgFslJSHJQbfsCmrk96Lkk1lvMDYu0az6UVuUpdhe4qk6MeBQ=w2400" class="cartimg" style="height: 40px;">PhP 600.00</button>					
+						</div>
+						<div class="col-sm-2"></div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row productrow py-2">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-4"><img class="d-block productpic py-3" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1618293107i/55404546.jpg" alt="First slide"></div>
+						<div class="col-sm-4 py-3">
+							<h3>Malibu Rising</h3>
+							
+							<h6>By Taylor Jenkins Reid</h6>
+							
+							<p>Malibu Rising is a story about one unforgettable night in the life of a family: the night they each have to choose what they will keep from the people who made them . . . and what they will leave behind. This edition includes an interview with the author, book club discussion questions, and more<a href="https://www.penguinrandomhouse.com/books/577243/malibu-rising-by-taylor-jenkins-reid/">...</a></p>
+							
+							<img alt="Five-star rating" src="https://lh3.googleusercontent.com/WD2x1bCo84slnvumThEzDD3VS9YjstpLb-3_GJowZ8Cpo9BO2ZKK1IwsIEoBBQIIL6irdifXa4RlckVeZUNPTROMs7qfqVY7-jUi6qK6ABw29ih1cccOULfEkDteClzrfwGKqwTvhg=w2400" style="height: 25px;">
+							
+							<br><br>
+							
+							<button onclick="AddMalibuRising()" class="cartbtn"><img alt="Add to cart icon" src="https://lh3.googleusercontent.com/iZzZirArLDZR_QKq78qVhaQ-kTf8nx1_hlS-YZOTWvEtKHsVV4FQ17s3V-7L2R1-wBckhU7_CY3l2_D7GgUC-vgt8NgFslJSHJQbfsCmrk96Lkk1lvMDYu0az6UVuUpdhe4qk6MeBQ=w2400" class="cartimg" style="height: 40px;">PhP 600.00</button>					
+						</div>
+						<div class="col-sm-2"></div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row productrow py-2">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-4"><img class="d-block productpic py-3" src="https://images-na.ssl-images-amazon.com/images/I/91jR8epDEyL.jpg" alt="First slide"></div>
+						<div class="col-sm-4 py-3">
+							<h3>The Wedding Date</h3>
+							
+							<h6>By Jasmine Guillory</h6>
+							
+							<p>The Wedding Date — Jasmine Guillory. A groomsman and his last-minute guest are about to discover if a fake date can go the distance in a fun and flirty debut novel. Agreeing to go to a wedding with a guy she gets stuck with in an elevator is something<a href="https://www.jasmineguillory.com/the-wedding-date#:~:text=The%20Wedding%20Date%20%E2%80%94%20Jasmine%20Guillory&text=A%20groomsman%20and%20his%20last,Monroe%20wouldn't%20normally%20do.">...</a></p>
+							
+							<img alt="Five-star rating" src="https://lh3.googleusercontent.com/WD2x1bCo84slnvumThEzDD3VS9YjstpLb-3_GJowZ8Cpo9BO2ZKK1IwsIEoBBQIIL6irdifXa4RlckVeZUNPTROMs7qfqVY7-jUi6qK6ABw29ih1cccOULfEkDteClzrfwGKqwTvhg=w2400" style="height: 25px;">
+							
+							<br><br>
+							
+							<button onclick="AddTheWeddingDate()" class="cartbtn"><img alt="Add to cart icon" src="https://lh3.googleusercontent.com/iZzZirArLDZR_QKq78qVhaQ-kTf8nx1_hlS-YZOTWvEtKHsVV4FQ17s3V-7L2R1-wBckhU7_CY3l2_D7GgUC-vgt8NgFslJSHJQbfsCmrk96Lkk1lvMDYu0az6UVuUpdhe4qk6MeBQ=w2400" class="cartimg" style="height: 40px;">PhP 600.00</button>					
+						</div>
+						<div class="col-sm-2"></div>
+					</div>
+				</div>
+				
+				<div class="carousel-item">
+					<div class="row productrow py-2">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-4"><img class="d-block productpic py-3" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1600698670l/49259788.jpg" alt="First slide"></div>
+						<div class="col-sm-4 py-3">
+							<h3>The Summer of Broken Rules</h3>
+							
+							<h6>By K. L. Walter</h6>
+							
+							<p>Meredith's family's annual game of assassin at Martha's Vineyard during a summer wedding is the perfect chance to honor her sister's legacy, and finally join the world again. But when she forms an alliance with a cute groomsman<a href="https://www.amazon.com/Summer-Broken-Rules-K-Walther/dp/1728210291#:~:text=Meredith's%20family's%20annual%20game%20of,...%20and%20her%20heart.">...</a></p>
+							
+							<img alt="Five-star rating" src="https://lh3.googleusercontent.com/WD2x1bCo84slnvumThEzDD3VS9YjstpLb-3_GJowZ8Cpo9BO2ZKK1IwsIEoBBQIIL6irdifXa4RlckVeZUNPTROMs7qfqVY7-jUi6qK6ABw29ih1cccOULfEkDteClzrfwGKqwTvhg=w2400" style="height: 25px;">
+							
+							<br><br>
+							
+							<button onclick="AddTheSummerofBrokenRules()" class="cartbtn"><img alt="Add to cart icon" src="https://lh3.googleusercontent.com/iZzZirArLDZR_QKq78qVhaQ-kTf8nx1_hlS-YZOTWvEtKHsVV4FQ17s3V-7L2R1-wBckhU7_CY3l2_D7GgUC-vgt8NgFslJSHJQbfsCmrk96Lkk1lvMDYu0az6UVuUpdhe4qk6MeBQ=w2400" class="cartimg" style="height: 40px;">PhP 600.00</button>					
+						</div>
+						<div class="col-sm-2"></div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+				<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+			</div>
+		</div>
+				
+				<div class="separate">
+		  <div class="row">
+			<div class="col-12">
+				<img src="https://lh3.googleusercontent.com/xkir0qRr1G7knsHHc7EsdCHm3U5T16I_tcLSCP29t4iIgVpyCrCwJsdg96ohX6LhCwRu_qjG4AVH1pEKTvlI5u6ADQO7rXSmkUnFPubch0NrbLCgkSTJ1NR4uT537k9nf7o2kWJQbw=w2400" class="img-fluid" alt="This is an image.">
+			</div>
+		  </div>
+		</div>
+	
+		<div class="container fluid"><h1 id="fant_asy" class="thrillertitle">Fantasy</h1></div>
+		<div id="fantasy" class="carousel carousel-dark slide"  data-interval="false">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#fantasy" data-bs-slide-to="0" class="active"></button>
+				<button type="button" data-bs-target="#fantasy" data-bs-slide-to="1"></button>
+				<button type="button" data-bs-target="#fantasy" data-bs-slide-to="2"></button>
+				<button type="button" data-bs-target="#fantasy" data-bs-slide-to="3"></button>
+				<button type="button" data-bs-target="#fantasy" data-bs-slide-to="4"></button>
+				<button type="button" data-bs-target="#fantasy" data-bs-slide-to="5"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row productrow py-2">
+						<div class="col-sm-2">
+						</div>
+						<div class="col-sm-4 piccol">
+						  <img class="d-block productpic py-3" src="https://d5i0fhmkm8zzl.cloudfront.net/9780545582971_harry_potter_and_the_order_of_the_phoenix_0.jpg" alt="First slide">
+						</div>
+						<div class="col-sm-4  py-3">
+							<h3>Harry Potter and the Order of the Phoenix</h3>
+							
+							<h6>By J. K. Rowling</h6>
+							
+							<p class="px-2">Now in his fifth year at Hogwarts, Harry (Daniel Radcliffe) learns that many in the wizarding community do not know the truth of his encounter with Lord Voldemort. Cornelius Fudge, minister of Magic, appoints his toady, Dolores Umbridge, as Defense<a href="https://www.sparknotes.com/lit/harrypotter5/summary/">...</a></p>
+							
+							<img alt="Five-star rating" src="https://lh3.googleusercontent.com/WD2x1bCo84slnvumThEzDD3VS9YjstpLb-3_GJowZ8Cpo9BO2ZKK1IwsIEoBBQIIL6irdifXa4RlckVeZUNPTROMs7qfqVY7-jUi6qK6ABw29ih1cccOULfEkDteClzrfwGKqwTvhg=w2400" style="height: 25px;">
+							
+							<br><br>
+							
+							<button onclick="AddHarryPotter()" class="cartbtn"><img alt="Add to cart icon" src="https://lh3.googleusercontent.com/iZzZirArLDZR_QKq78qVhaQ-kTf8nx1_hlS-YZOTWvEtKHsVV4FQ17s3V-7L2R1-wBckhU7_CY3l2_D7GgUC-vgt8NgFslJSHJQbfsCmrk96Lkk1lvMDYu0az6UVuUpdhe4qk6MeBQ=w2400" class="cartimg" style="height: 40px;">PhP 550.00</button>					
+						</div>
+						<div class="col-sm-2"></div>
+					</div>    
+				</div>
+				<div class="carousel-item">
+					<div class="row productrow py-2">
+						<div class="col-sm-2">
+						</div>
+						<div class="col-sm-4">
+						  <img class="d-block productpic py-3" src="https://images-na.ssl-images-amazon.com/images/I/91tmniIJtlL.jpg" alt="First slide">
+						</div>
+						<div class="col-sm-4 py-3">
+							<h3>Six of Crows</h3>
+							
+							<h6>By Leigh Bardufo</h6>
+							
+							<p>Six of Crows is the story of Kaz Brekker and his crew, attempting to pull off an impossible heist. There is Kaz, known as 'Dirtyhands' in the Barrel (the slums of Ketterdam), who is part of The Dregs. The Dregs is a gang, and as the name suggests consists of<a href="https://www.theguardian.com/childrens-books-site/2015/sep/29/six-of-crows-leigh-bardugo-review#:~:text=Six%20of%20Crows%20is%20the%20story%20of%20Kaz%20Brekker%20and,the%20floor%20of%20the%20Barrel.">...</a></p>
+							
+							<img alt="Five-star rating" src="https://lh3.googleusercontent.com/WD2x1bCo84slnvumThEzDD3VS9YjstpLb-3_GJowZ8Cpo9BO2ZKK1IwsIEoBBQIIL6irdifXa4RlckVeZUNPTROMs7qfqVY7-jUi6qK6ABw29ih1cccOULfEkDteClzrfwGKqwTvhg=w2400" style="height: 25px;">
+							
+							<br><br>
+							
+							<button onclick="AddSixofCrows()" class="cartbtn"><img alt="Add to cart icon" src="https://lh3.googleusercontent.com/iZzZirArLDZR_QKq78qVhaQ-kTf8nx1_hlS-YZOTWvEtKHsVV4FQ17s3V-7L2R1-wBckhU7_CY3l2_D7GgUC-vgt8NgFslJSHJQbfsCmrk96Lkk1lvMDYu0az6UVuUpdhe4qk6MeBQ=w2400" class="cartimg" style="height: 40px;">PhP 550.00</button>					
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="carousel-item">
+					<div class="row productrow py-2">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-4"><img class="d-block productpic py-3" src="https://images-na.ssl-images-amazon.com/images/I/91i7MSrNHXL.jpg" alt="Book Cover"></div>
+						<div class="col-sm-4 py-3">
+							<h3>Shadow and Bone</h3>
+							
+							<h6>By Leigh Bardudo</h6>
+							
+							<p>Orphaned and expendable, Alina Starkov is a soldier who knows she may not survive her first trek across the Shadow Fold―a swath of unnatural darkness crawling with monsters. But when her regiment is attacked, Alina unleashes dormant magic not even she knew she<a href="https://www.fiercereads.com/books/shadow-bone-series-tie-in-edition/#:~:text=Orphaned%20and%20expendable%2C%20Alina%20Starkov,even%20she%20knew%20she%20possessed.">...</a></p>
+							<img alt="Five-star rating" src="https://lh3.googleusercontent.com/WD2x1bCo84slnvumThEzDD3VS9YjstpLb-3_GJowZ8Cpo9BO2ZKK1IwsIEoBBQIIL6irdifXa4RlckVeZUNPTROMs7qfqVY7-jUi6qK6ABw29ih1cccOULfEkDteClzrfwGKqwTvhg=w2400" style="height: 25px;">
+							
+							<br><br>
+							
+							<button onclick="AddShadowandBone()" class="cartbtn"><img alt="Add to cart icon" src="https://lh3.googleusercontent.com/iZzZirArLDZR_QKq78qVhaQ-kTf8nx1_hlS-YZOTWvEtKHsVV4FQ17s3V-7L2R1-wBckhU7_CY3l2_D7GgUC-vgt8NgFslJSHJQbfsCmrk96Lkk1lvMDYu0az6UVuUpdhe4qk6MeBQ=w2400" class="cartimg" style="height: 40px;">PhP 550.00</button>					
+						</div>
+						<div class="col-sm-2"></div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row productrow py-2">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-4"><img class="d-block productpic py-3" src="https://miro.medium.com/max/378/1*UAshR-lwaefghMERGc3eLw.jpeg" alt="First slide"></div>
+						<div class="col-sm-4 py-3">
+							<h3>Miss Peregrine's Home for Peculiar Children</h3>
+							
+							<h6>By Ransom Riggs</h6>
+							
+							<p>Miss Peregrine's Home for Peculiar Children by Ransom Riggs is a captivating story about a very odd home for a select group of young children. When Jake's grandfather mysteriously dies, he goes off on an adventure to find Miss Peregrine and solve the mysteries of<a href="https://ppld.org/book-reviews/miss-peregrines-home-peculiar-children-1#:~:text=Miss%20Peregrine's%20Home%20for%20Peculiar%20Children%20by%20Ransom%20Riggs%20is,of%20his%20grandfather's%20past%20life.">...</a></p>
+							
+							<img alt="Five-star rating" src="https://lh3.googleusercontent.com/WD2x1bCo84slnvumThEzDD3VS9YjstpLb-3_GJowZ8Cpo9BO2ZKK1IwsIEoBBQIIL6irdifXa4RlckVeZUNPTROMs7qfqVY7-jUi6qK6ABw29ih1cccOULfEkDteClzrfwGKqwTvhg=w2400" style="height: 25px;">
+							
+							<br><br>
+							
+							<button onclick="AddMissPeregrine()" class="cartbtn"><img alt="Add to cart icon" src="https://lh3.googleusercontent.com/iZzZirArLDZR_QKq78qVhaQ-kTf8nx1_hlS-YZOTWvEtKHsVV4FQ17s3V-7L2R1-wBckhU7_CY3l2_D7GgUC-vgt8NgFslJSHJQbfsCmrk96Lkk1lvMDYu0az6UVuUpdhe4qk6MeBQ=w2400" class="cartimg" style="height: 40px;">PhP 550.00</button>					
+						</div>
+						<div class="col-sm-2"></div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row productrow py-2">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-4"><img class="d-block productpic py-3" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1603478051l/53422971._SY475_.jpg" alt="First slide"></div>
+						<div class="col-sm-4 py-3">
+							<h3>These Hollow Vows</h3>
+							
+							<h6>By Lexi Ryan</h6>
+							
+							<p>Cruel Prince meets A Court of Thorns and Roses in this sexy, action-packed fantasy about a girl who is caught between two treacherous faerie courts and their dangerously seductive princes. Brie would do anything before making a deal with the Fae; death is a<a href="https://www.amazon.com/These-Hollow-Vows-Lexi-Ryan/dp/0358386578">...</a></p>
+							
+							<img alt="Five-star rating" src="https://lh3.googleusercontent.com/WD2x1bCo84slnvumThEzDD3VS9YjstpLb-3_GJowZ8Cpo9BO2ZKK1IwsIEoBBQIIL6irdifXa4RlckVeZUNPTROMs7qfqVY7-jUi6qK6ABw29ih1cccOULfEkDteClzrfwGKqwTvhg=w2400" style="height: 25px;">
+							
+							<br><br>
+							
+							<button onclick="AddTheseHollowVows()" class="cartbtn"><img alt="Add to cart icon" src="https://lh3.googleusercontent.com/iZzZirArLDZR_QKq78qVhaQ-kTf8nx1_hlS-YZOTWvEtKHsVV4FQ17s3V-7L2R1-wBckhU7_CY3l2_D7GgUC-vgt8NgFslJSHJQbfsCmrk96Lkk1lvMDYu0az6UVuUpdhe4qk6MeBQ=w2400" class="cartimg" style="height: 40px;">PhP 550.00</button>					
+						</div>
+						<div class="col-sm-2"></div>
+					</div>
+				</div>
+				
+				<div class="carousel-item">
+					<div class="row productrow py-2">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-4"><img class="d-block productpic py-3" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1179937856l/975133.jpg" alt="First slide"></div>
+						<div class="col-sm-4 py-3">
+							<h3>The Sword in the Stone</h3>
+							
+							<h6>By T. H. White</h6>
+							
+							<p>The premise is that Arthur's youth, not dealt with in Sir Thomas Malory's Le Morte d'Arthur (1485), was a time when he was tutored by Merlyn to prepare him for the use of power and royal life. Merlyn magically turns him into various animals at times, and he<a href="https://en.wikipedia.org/wiki/The_Sword_in_the_Stone_(novel)">...</a>
+              </p>				
+							<img alt="Five-star rating" src="https://lh3.googleusercontent.com/WD2x1bCo84slnvumThEzDD3VS9YjstpLb-3_GJowZ8Cpo9BO2ZKK1IwsIEoBBQIIL6irdifXa4RlckVeZUNPTROMs7qfqVY7-jUi6qK6ABw29ih1cccOULfEkDteClzrfwGKqwTvhg=w2400" style="height: 25px;">
+							
+							<br><br>
+							
+							<button onclick="AddTheSwordintheStone()" class="cartbtn"><img alt="Add to cart icon" src="https://lh3.googleusercontent.com/iZzZirArLDZR_QKq78qVhaQ-kTf8nx1_hlS-YZOTWvEtKHsVV4FQ17s3V-7L2R1-wBckhU7_CY3l2_D7GgUC-vgt8NgFslJSHJQbfsCmrk96Lkk1lvMDYu0az6UVuUpdhe4qk6MeBQ=w2400" class="cartimg" style="height: 40px;">PhP 550.00</button>					
+						</div>
+						<div class="col-sm-2"></div>
+					</div>
+				</div>
+				
+				<button class="carousel-control-prev" type="button" data-bs-target="#fantasy" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+				<button class="carousel-control-next" type="button" data-bs-target="#fantasy" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+			</div>
+		</div>
+				<div class="separate">
+		  <div class="row">
+			<div class="col-12">
+				<img src="https://lh3.googleusercontent.com/xkir0qRr1G7knsHHc7EsdCHm3U5T16I_tcLSCP29t4iIgVpyCrCwJsdg96ohX6LhCwRu_qjG4AVH1pEKTvlI5u6ADQO7rXSmkUnFPubch0NrbLCgkSTJ1NR4uT537k9nf7o2kWJQbw=w2400" class="img-fluid" alt="This is an image.">
+			</div>
+		  </div>
+		</div>
+		
+		<div class="container fluid"><h1 id="sci_fi" class="scifititle">Sci-fi</h1></div>
+		<div id="scifi" class="carousel carousel-dark slide"  data-interval="false">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#scifi" data-bs-slide-to="0" class="active"></button>
+				<button type="button" data-bs-target="#scifi" data-bs-slide-to="1"></button>
+				<button type="button" data-bs-target="#scifi" data-bs-slide-to="2"></button>
+				<button type="button" data-bs-target="#scifi" data-bs-slide-to="3"></button>
+				<button type="button" data-bs-target="#scifi" data-bs-slide-to="4"></button>
+				<button type="button" data-bs-target="#scifi" data-bs-slide-to="5"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row productrow py-2">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-4 piccol"><img class="d-block productpic py-3" src="https://images-na.ssl-images-amazon.com/images/I/916mzs9Ty9L.jpg" alt="First slide"></div>
+						<div class="col-sm-4  py-3">
+							<h3>The Doors of Eden</h3>
+							
+							<h6>By Adrian Tchaikovsky</h6>
+							
+							<p class="px-2">The Doors of Eden is a novel about alien worlds, as you've never seen them before - because every one of these alien worlds is, in fact, our earth, in a timeline where the development of sentience spun off a little differently each time<a href="http://www.nerds-feather.com/2020/08/microreview-book-doors-of-eden-by.html">...</a></p>
+							
+							<img alt="Five-star rating" src="https://lh3.googleusercontent.com/WD2x1bCo84slnvumThEzDD3VS9YjstpLb-3_GJowZ8Cpo9BO2ZKK1IwsIEoBBQIIL6irdifXa4RlckVeZUNPTROMs7qfqVY7-jUi6qK6ABw29ih1cccOULfEkDteClzrfwGKqwTvhg=w2400" style="height: 25px;">
+							
+							<br><br>
+							
+							<button onclick="AddTheDoorsofEden()" class="cartbtn"><img alt="Add to cart icon" src="https://lh3.googleusercontent.com/iZzZirArLDZR_QKq78qVhaQ-kTf8nx1_hlS-YZOTWvEtKHsVV4FQ17s3V-7L2R1-wBckhU7_CY3l2_D7GgUC-vgt8NgFslJSHJQbfsCmrk96Lkk1lvMDYu0az6UVuUpdhe4qk6MeBQ=w2400" class="cartimg" style="height: 40px;">PhP 700.00</button>					
+						</div>
+						<div class="col-sm-2"></div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row productrow py-2">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-4"><img class="d-block productpic py-3" src="https://images.moviesanywhere.com/198e228b071c60f5ad57e5f62fe60029/ff22cad6-2218-414d-b853-3f95d76905c7.jpg" alt="First slide"></div>
+						<div class="col-sm-4 py-3">
+							<h3>The Lord of the Rings: The Fellowship of the Ring</h3>
+							
+							<h6>By J. R. R. Tolkien</h6>
+							
+							<p>When the eccentric hobbit Bilbo Baggins leaves his home in the Shire, he gives his greatest treasure to his heir Frodo: a magic ring that makes its wearer invisible. Because of the difficulty Bilbo has in giving the ring away<a href="https://www.cliffsnotes.com/literature/l/the-lord-of-the-rings/book-summary/the-fellowship-of-the-ring#:~:text=When%20the%20eccentric%20hobbit%20Bilbo,is%20more%20than%20it%20appears.">...</a></p>
+							
+							<img alt="Five-star rating" src="https://lh3.googleusercontent.com/WD2x1bCo84slnvumThEzDD3VS9YjstpLb-3_GJowZ8Cpo9BO2ZKK1IwsIEoBBQIIL6irdifXa4RlckVeZUNPTROMs7qfqVY7-jUi6qK6ABw29ih1cccOULfEkDteClzrfwGKqwTvhg=w2400" style="height: 25px;">
+							
+							<br><br>
+							
+							<button onclick="AddTheLordoftheRings()" class="cartbtn"><img alt="Add to cart icon" src="https://lh3.googleusercontent.com/iZzZirArLDZR_QKq78qVhaQ-kTf8nx1_hlS-YZOTWvEtKHsVV4FQ17s3V-7L2R1-wBckhU7_CY3l2_D7GgUC-vgt8NgFslJSHJQbfsCmrk96Lkk1lvMDYu0az6UVuUpdhe4qk6MeBQ=w2400" class="cartimg" style="height: 40px;">PhP 700.00</button>					
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="carousel-item">
+					<div class="row productrow py-2">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-4"><img class="d-block productpic py-3" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1641881897l/58950674._SY475_.jpg" alt="Book Cover"></div>
+						<div class="col-sm-4 py-3">
+							<h3>Eyes of the Void</h3>
+							
+							<h6>By Adrian Tchaikovsky</h6>
+							
+							<p>The Arthur C. Clarke award-winning author of Children of Time brings us the second novel in an extraordinary space opera trilogy about humanity on the brink of extinction, and how one man's discovery will save or destroy us all<a href="https://www.hachettebookgroup.com/titles/adrian-tchaikovsky/eyes-of-the-void/9781668604908/#:~:text=The%20Arthur%20C.,save%20or%20destroy%20us%20all.">...</a></p>
+							
+							<img alt="Five-star rating" src="https://lh3.googleusercontent.com/WD2x1bCo84slnvumThEzDD3VS9YjstpLb-3_GJowZ8Cpo9BO2ZKK1IwsIEoBBQIIL6irdifXa4RlckVeZUNPTROMs7qfqVY7-jUi6qK6ABw29ih1cccOULfEkDteClzrfwGKqwTvhg=w2400" style="height: 25px;">
+							
+							<br><br>
+							
+							<button onclick="AddEyesoftheVoid()" class="cartbtn"><img alt="Add to cart icon" src="https://lh3.googleusercontent.com/iZzZirArLDZR_QKq78qVhaQ-kTf8nx1_hlS-YZOTWvEtKHsVV4FQ17s3V-7L2R1-wBckhU7_CY3l2_D7GgUC-vgt8NgFslJSHJQbfsCmrk96Lkk1lvMDYu0az6UVuUpdhe4qk6MeBQ=w2400" class="cartimg" style="height: 40px;">PhP 700.00</button>					
+						</div>
+						<div class="col-sm-2"></div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row productrow py-2">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-4"><img class="d-block productpic py-3" src="https://m.media-amazon.com/images/I/51E28X-SNTL.jpg" alt="First slide"></div>
+						<div class="col-sm-4 py-3">
+							<h3>The Three-Body Problem</h3>
+							
+							<h6>By Liu Cixin</h6>
+							
+							<p>The Three-Body Problem” is a science fiction novel by Cixin Liu (and translated by Ken Liu) which traces the efforts of disillusioned Chinese scientists who implore alien life to come to Earth to forcibly redeem humanity<a href="https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)">...</a></p>
+							
+							<img alt="Five-star rating" src="https://lh3.googleusercontent.com/WD2x1bCo84slnvumThEzDD3VS9YjstpLb-3_GJowZ8Cpo9BO2ZKK1IwsIEoBBQIIL6irdifXa4RlckVeZUNPTROMs7qfqVY7-jUi6qK6ABw29ih1cccOULfEkDteClzrfwGKqwTvhg=w2400" style="height: 25px;">
+							
+							<br><br>
+							
+							<button onclick="AddTheThreeBodyProblem()" class="cartbtn"><img alt="Add to cart icon" src="https://lh3.googleusercontent.com/iZzZirArLDZR_QKq78qVhaQ-kTf8nx1_hlS-YZOTWvEtKHsVV4FQ17s3V-7L2R1-wBckhU7_CY3l2_D7GgUC-vgt8NgFslJSHJQbfsCmrk96Lkk1lvMDYu0az6UVuUpdhe4qk6MeBQ=w2400" class="cartimg" style="height: 40px;">PhP 700.00</button>					
+						</div>
+						<div class="col-sm-2"></div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row productrow py-2">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-4"><img class="d-block productpic py-3" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1532090400l/40881567._SY475_.jpg" alt="First slide"></div>
+						<div class="col-sm-4 py-3">
+							<h3>The Last Astronaut</h3>
+							
+							<h6>By David Wellington</h6>
+							
+							<p>Sally Jansen was NASA's leading astronaut, until a mission to Mars ended in disaster. Haunted by her failure, she lives in quiet anonymity, convinced her days in space are over. She's wrong. A large alien object has entered the solar system on a straight course<a href="https://www.amazon.com/Last-Astronaut-David-Wellington/dp/0316419575#:~:text=Sally%20Jansen%20was%20NASA's%20leading,a%20straight%20course%20toward%20Earth.">...</a></p>
+							
+							<img alt="Five-star rating" src="https://lh3.googleusercontent.com/WD2x1bCo84slnvumThEzDD3VS9YjstpLb-3_GJowZ8Cpo9BO2ZKK1IwsIEoBBQIIL6irdifXa4RlckVeZUNPTROMs7qfqVY7-jUi6qK6ABw29ih1cccOULfEkDteClzrfwGKqwTvhg=w2400" style="height: 25px;">
+							
+							<br><br>
+							
+							<button onclick="AddTheLastAstronaut()" class="cartbtn"><img alt="Add to cart icon" src="https://lh3.googleusercontent.com/iZzZirArLDZR_QKq78qVhaQ-kTf8nx1_hlS-YZOTWvEtKHsVV4FQ17s3V-7L2R1-wBckhU7_CY3l2_D7GgUC-vgt8NgFslJSHJQbfsCmrk96Lkk1lvMDYu0az6UVuUpdhe4qk6MeBQ=w2400" class="cartimg" style="height: 40px;">PhP 700.00</button>					
+						</div>
+						<div class="col-sm-2"></div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row productrow py-2">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-4"><img class="d-block productpic py-3" src="https://images-na.ssl-images-amazon.com/images/I/91HR8YY1yvL.jpg" alt="First slide"></div>
+						<div class="col-sm-4 py-3">
+							<h3>Sky Without Stars</h3>
+							
+							<h6>By Jessica Brody and Joanne Rendell</h6>
+							
+							<p>Sky Without Stars is a dark and intense story of oppression, rebellion, and revolution. It features three main characters – a thief, an officer, and a young woman who is guardian to the last surviving library<a href="https://thebookishlibra.com/2019/03/18/early-review-sky-without-stars/#:~:text=Sky%20Without%20Stars%20is%20a,to%20the%20last%20surviving%20library.">...</a></p>
+							
+							<img alt="Five-star rating" src="https://lh3.googleusercontent.com/WD2x1bCo84slnvumThEzDD3VS9YjstpLb-3_GJowZ8Cpo9BO2ZKK1IwsIEoBBQIIL6irdifXa4RlckVeZUNPTROMs7qfqVY7-jUi6qK6ABw29ih1cccOULfEkDteClzrfwGKqwTvhg=w2400" style="height: 25px;">
+							
+							<br><br>
+							
+							<button onclick="AddSkyWithoutStars()" class="cartbtn"><img alt="Add to cart icon" src="https://lh3.googleusercontent.com/iZzZirArLDZR_QKq78qVhaQ-kTf8nx1_hlS-YZOTWvEtKHsVV4FQ17s3V-7L2R1-wBckhU7_CY3l2_D7GgUC-vgt8NgFslJSHJQbfsCmrk96Lkk1lvMDYu0az6UVuUpdhe4qk6MeBQ=w2400" class="cartimg" style="height: 40px;">PhP 700.00</button>					
+						</div>
+						<div class="col-sm-2"></div>
+					</div>
+				</div>
+				
+				<button class="carousel-control-prev" type="button" data-bs-target="#scifi" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+				<button class="carousel-control-next" type="button" data-bs-target="#scifi" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+			</div>
+		</div>
+			<div class="separate">
+		  <div class="row">
+			<div class="col-12">
+				<img src="https://lh3.googleusercontent.com/xkir0qRr1G7knsHHc7EsdCHm3U5T16I_tcLSCP29t4iIgVpyCrCwJsdg96ohX6LhCwRu_qjG4AVH1pEKTvlI5u6ADQO7rXSmkUnFPubch0NrbLCgkSTJ1NR4uT537k9nf7o2kWJQbw=w2400" class="img-fluid" alt="This is an image.">
+			</div>
+		  </div>
+		</div>
+      
+		<div class="container"><h1 id="thriller" class="romancetitle">Thriller</h1></div>     
+<div id="horror" class="carousel carousel-dark slide"  data-interval="false">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#horror" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#horror" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#horror" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#horror" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#horror" data-bs-slide-to="4"></button>
+    <button type="button" data-bs-target="#horror" data-bs-slide-to="5"></button>
+</div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+	<div class="row productrow py-2">
+	<div class="col-sm-2">
+    </div>
+	<div class="col-sm-4 piccol">
+      <img class="d-block productpic py-3" src="https://images-na.ssl-images-amazon.com/images/I/81SRiprjQSL.jpg" alt="First slide">
+    </div>
+    <div class="col-sm-4  py-3">
+	<h3>Bird Box</h3>
+	<h6>By  Josh Malerman</h6>
+	<p class="px-2">
+	The book follows a woman who must find a way to guide herself and her children to safety despite the potential threat from an unseen adversary. The story is partially told via flashbacks and takes place during three time periods<a href="https://en.wikipedia.org/wiki/Bird_Box_(novel)#:~:text=The%20book%20follows%20a%20woman,place%20during%20three%20time%20periods.&text=A%20sequel%20to%20the%20book,released%20on%20July%2021%2C%202020.">...</a> 
+	</p>
+	<img alt="Five-star rating" src="https://lh3.googleusercontent.com/WD2x1bCo84slnvumThEzDD3VS9YjstpLb-3_GJowZ8Cpo9BO2ZKK1IwsIEoBBQIIL6irdifXa4RlckVeZUNPTROMs7qfqVY7-jUi6qK6ABw29ih1cccOULfEkDteClzrfwGKqwTvhg=w2400" style="height: 25px;">
+	<br><br>
+	<button onclick="AddBirdBox()" class="cartbtn"><img alt="Add to cart icon" src="https://lh3.googleusercontent.com/iZzZirArLDZR_QKq78qVhaQ-kTf8nx1_hlS-YZOTWvEtKHsVV4FQ17s3V-7L2R1-wBckhU7_CY3l2_D7GgUC-vgt8NgFslJSHJQbfsCmrk96Lkk1lvMDYu0az6UVuUpdhe4qk6MeBQ=w2400" class="cartimg" style="height: 40px;">PhP 450.00</button>					
+    </div>
+	<div class="col-sm-2">
+    </div>
+
+	</div>    </div>
+     <div class="carousel-item">
+	<div class="row productrow py-2">
+	<div class="col-sm-2">
+    </div>
+	<div class="col-sm-4">
+      <img class="d-block productpic py-3" src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781982127794/it-9781982127794_hr.jpg" alt="First slide">
+    </div>
+    <div class="col-sm-4 py-3">
+	<h1>IT</h1>
+	<h6>By Stephen King</h6>
+	<p>
+	It is a 1986 horror novel by American author Stephen King. It was his 22nd book and his 17th novel written under his own name. The story follows the experiences of seven children as they are terrorized by an evil entity that exploits the fears of its victims to disguise itself while hunting its prey<a href="https://en.wikipedia.org/wiki/It_(novel)#:~:text=It%20is%20a%201986%20horror,itself%20while%20hunting%20its%20prey.">...</a>
+	</p>
+	<img alt="Five-star rating" src="https://lh3.googleusercontent.com/WD2x1bCo84slnvumThEzDD3VS9YjstpLb-3_GJowZ8Cpo9BO2ZKK1IwsIEoBBQIIL6irdifXa4RlckVeZUNPTROMs7qfqVY7-jUi6qK6ABw29ih1cccOULfEkDteClzrfwGKqwTvhg=w2400" style="height: 25px;">
+	<br><br>
+	<button onclick="AddIT()" class="cartbtn"><img alt="Add to cart icon" src="https://lh3.googleusercontent.com/iZzZirArLDZR_QKq78qVhaQ-kTf8nx1_hlS-YZOTWvEtKHsVV4FQ17s3V-7L2R1-wBckhU7_CY3l2_D7GgUC-vgt8NgFslJSHJQbfsCmrk96Lkk1lvMDYu0az6UVuUpdhe4qk6MeBQ=w2400" class="cartimg" style="height: 40px;">PhP 450.00</button>					
+    </div>
+    </div>
+	<div class="col-sm-2">
+    </div>
+
+	</div>
+    <div class="carousel-item">
+	<div class="row productrow py-2">
+	<div class="col-sm-2">
+    </div>
+	<div class="col-sm-4">
+      <img class="d-block productpic py-3" src="https://upload.wikimedia.org/wikipedia/en/6/61/Coraline.jpg" alt="Book Cover">
+    </div>
+    <div class="col-sm-4 py-3">
+	<h3>Coraline</h3>
+	<h6>By Neil Gaiman</h6>
+	<p>
+	Coraline discovers a dark world crawling with rats, spiders, strange creatures, and others spookiness -- but through her creepy adventures she also discovers her own inner bravery<a href="https://www.commonsensemedia.org/book-reviews/coraline#:~:text=Coraline%20discovers%20a%20dark%20world,adapted%20for%20the%202009%20movie">...</a>
+	</p>
+	<img alt="Five-star rating" src="https://lh3.googleusercontent.com/WD2x1bCo84slnvumThEzDD3VS9YjstpLb-3_GJowZ8Cpo9BO2ZKK1IwsIEoBBQIIL6irdifXa4RlckVeZUNPTROMs7qfqVY7-jUi6qK6ABw29ih1cccOULfEkDteClzrfwGKqwTvhg=w2400" style="height: 25px;">
+	<br><br>
+	<button onclick="AddCoraline()" class="cartbtn"><img alt="Add to cart icon" src="https://lh3.googleusercontent.com/iZzZirArLDZR_QKq78qVhaQ-kTf8nx1_hlS-YZOTWvEtKHsVV4FQ17s3V-7L2R1-wBckhU7_CY3l2_D7GgUC-vgt8NgFslJSHJQbfsCmrk96Lkk1lvMDYu0az6UVuUpdhe4qk6MeBQ=w2400" class="cartimg" style="height: 40px;">PhP 450.00</button>					
+    </div>
+	<div class="col-sm-2">
+    </div>
+
+	</div>
+    </div>
+	
+	<div class="carousel-item">
+	<div class="row productrow py-2">
+	<div class="col-sm-2">
+    </div>
+	<div class="col-sm-4">
+      <img class="d-block productpic py-3" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1611848428l/48915818.jpg" alt="First slide">
+    </div>
+    <div class="col-sm-4 py-3">
+	<h3>The Death of Jane Lawrence</h3>
+	<h6>By Ransom Riggs</h6>
+	<p>
+	Set in an imaginary world version of post-war Britain where body horror and romance collide, The Death of Jane Lawrence digs into the age-old question asked by gothic novels and fairy tales alike: What do you do if your deeply attractive but hastily-married husband is hiding a very dark secret in his crumbling manor<a href="https://www.npr.org/2021/10/10/1044640260/the-death-of-jane-lawrence-review#:~:text=Set%20in%20an%20imaginary%20world,secret%20in%20his%20crumbling%20manor">...</a>
+	</p>
+	<img alt="Five-star rating" src="https://lh3.googleusercontent.com/WD2x1bCo84slnvumThEzDD3VS9YjstpLb-3_GJowZ8Cpo9BO2ZKK1IwsIEoBBQIIL6irdifXa4RlckVeZUNPTROMs7qfqVY7-jUi6qK6ABw29ih1cccOULfEkDteClzrfwGKqwTvhg=w2400" style="height: 25px;">
+	<br><br>
+	<button onclick="AddTheDeathofJaneLawrence()" class="cartbtn"><img alt="Add to cart icon" src="https://lh3.googleusercontent.com/iZzZirArLDZR_QKq78qVhaQ-kTf8nx1_hlS-YZOTWvEtKHsVV4FQ17s3V-7L2R1-wBckhU7_CY3l2_D7GgUC-vgt8NgFslJSHJQbfsCmrk96Lkk1lvMDYu0az6UVuUpdhe4qk6MeBQ=w2400" class="cartimg" style="height: 40px;">PhP 450.00</button>					
+    </div>
+	<div class="col-sm-2">
+    </div>
+
+	</div>
+	</div>
+	
+		<div class="carousel-item">
+	<div class="row productrow py-2">
+	<div class="col-sm-2">
+    </div>
+	<div class="col-sm-4">
+      <img class="d-block productpic py-3" src="https://ph-live-02.slatic.net/p/11a0e2d23ca606b52afb5d8800314b5f.jpg" alt="First slide">
+    </div>
+    <div class="col-sm-4 py-3">
+	<h3>The Haunting of Hill House</h3>
+	<h6>By David Wellington</h6>
+	<p>
+	The Haunting of Hill House book follows four strangers, all of whom come to Hill House, long-rumored to be haunted, under the guidance of Dr. Montague, who is hoping to scientifically prove the existence of the supernatural. Over the course of the summer, the house proves itself to be extremely haunted<a href="https://www.bustle.com/p/what-happens-in-the-haunting-of-hill-house-book-is-very-different-from-the-netflix-tv-series-but-just-as-creepy-12185148">...</a>
+	</p>
+	<img alt="Five-star rating" src="https://lh3.googleusercontent.com/WD2x1bCo84slnvumThEzDD3VS9YjstpLb-3_GJowZ8Cpo9BO2ZKK1IwsIEoBBQIIL6irdifXa4RlckVeZUNPTROMs7qfqVY7-jUi6qK6ABw29ih1cccOULfEkDteClzrfwGKqwTvhg=w2400" style="height: 25px;">
+	<br><br>
+	<button onclick="AddTheHauntingofHillHouse()" class="cartbtn"><img alt="Add to cart icon" src="https://lh3.googleusercontent.com/iZzZirArLDZR_QKq78qVhaQ-kTf8nx1_hlS-YZOTWvEtKHsVV4FQ17s3V-7L2R1-wBckhU7_CY3l2_D7GgUC-vgt8NgFslJSHJQbfsCmrk96Lkk1lvMDYu0az6UVuUpdhe4qk6MeBQ=w2400" class="cartimg" style="height: 40px;">PhP 450.00</button>					
+    </div>
+	<div class="col-sm-2">
+    </div>
+
+	</div>
+	</div>
+	
+	
+    <div class="carousel-item">
+	<div class="row productrow py-2">
+	<div class="col-sm-2">
+    </div>
+	<div class="col-sm-4">
+    <img class="d-block productpic py-3" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1610469240l/53195923.jpg" alt="First slide">
+    </div>
+    <div class="col-sm-4 py-3">
+	<h3>Nothing but Blackened Teeth</h3>
+	<h6>By Jessica Brody</h6>
+	<p>
+	Cassandra Khaw's Nothing But Blackened Teeth is a gorgeously creepy haunted house tale, steeped in Japanese folklore and full of devastating twists. A Heian-era mansion stands abandoned, its foundations resting on the bones of a bride and its walls packed with the remains of the girls sacrificed to keep her company<a href="https://www.amazon.com/Nothing-Blackened-Teeth-Cassandra-Khaw/dp/1250759412#:~:text=Cassandra%20Khaw's%20Nothing%20But%20Blackened,sacrificed%20to%20keep%20her%20company.">...</a>
+	</p>
+	<img alt="Five-star rating" src="https://lh3.googleusercontent.com/WD2x1bCo84slnvumThEzDD3VS9YjstpLb-3_GJowZ8Cpo9BO2ZKK1IwsIEoBBQIIL6irdifXa4RlckVeZUNPTROMs7qfqVY7-jUi6qK6ABw29ih1cccOULfEkDteClzrfwGKqwTvhg=w2400" style="height: 25px;">
+	<br><br>
+	<button onclick="AddNothingbutBlackenedTeeth()" class="cartbtn"><img alt="Add to cart icon" src="https://lh3.googleusercontent.com/iZzZirArLDZR_QKq78qVhaQ-kTf8nx1_hlS-YZOTWvEtKHsVV4FQ17s3V-7L2R1-wBckhU7_CY3l2_D7GgUC-vgt8NgFslJSHJQbfsCmrk96Lkk1lvMDYu0az6UVuUpdhe4qk6MeBQ=w2400" class="cartimg" style="height: 40px;">PhP 450.00</button>					
+    </div>
+	<div class="col-sm-2">
+    </div>
+
+	</div>
+	</div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#horror" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#horror" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+  </div>
+
+    </div>
+      		
+		
+		<div class="separate">
+			<div class="row">
+				<div class="col-12">
+					<img src="https://lh3.googleusercontent.com/xkir0qRr1G7knsHHc7EsdCHm3U5T16I_tcLSCP29t4iIgVpyCrCwJsdg96ohX6LhCwRu_qjG4AVH1pEKTvlI5u6ADQO7rXSmkUnFPubch0NrbLCgkSTJ1NR4uT537k9nf7o2kWJQbw=w2400" class="img-fluid" alt="This is an image.">
+				</div>
+			</div>
+		</div>
+
+		
+		
+		
+		
+		<form name="orders" action="http://sirjm.infinityfreeapp.com/checkout.php" method="GET" onsubmit="Checkout()">
+			<div id="orderrow">
+			
+				<div class="row">
+					<div class="col-1"></div>
+					<div class="col-12 col-md-4">	
+						<div class="cartt">
+							<img alt="Add to cart icon" src="https://lh3.googleusercontent.com/iZzZirArLDZR_QKq78qVhaQ-kTf8nx1_hlS-YZOTWvEtKHsVV4FQ17s3V-7L2R1-wBckhU7_CY3l2_D7GgUC-vgt8NgFslJSHJQbfsCmrk96Lkk1lvMDYu0az6UVuUpdhe4qk6MeBQ=w2400" class="cartimg" style="height: 40px;">
+							<h3 class="carttitle">Cart</h3>
+						</div>
+						<div class="cartlist">
+							<input id="txt_order" type="hidden" name="cust_order">
+							
+							<div id="CartList"></div>
+							<div class="d-grid total"><span id="Total">0 PhP</span></div>
+						</div>
+					</div>	
+					
+					<div class="col-12 col-md-6">
+						<div class="cartt">
+							<img alt="Add to cart icon" src="https://lh3.googleusercontent.com/8Wh4o6d3J-Mfd1xj9z139g2OmsyxA6iwGdrinCeKg7kMhk2ecXdzK_sXoveSmpEUue5hJTyKd_K0sRFJyH37_qe4xJ1AvrBeAoZir3byNKAOFLymVM0o-z67dth3YqDAPTWfzjAikQ=w2400" class="cartimg" style="height: 40px;">
+							<h3 class="carttitle">Delivery Details</h3>
+						</div>
+						
+						<div id="Inputs">
+							<div class="row">
+								<div class="col-sm-6">
+									<label for="txtname" class="form-label">Name</label>
+									
+									<div class="input-group mb-3">
+										<span class="input-group-text"><img src="https://lh3.googleusercontent.com/k46mudt2SG15ROumll0MOY-cv5US3Pab9AeAFLpyuJjpmglYqmqOyrszJAkpj_KI5nNzVT-ojJIXczUIj824dNK2S6qh9FBvaN_S2pCwIHdEsk6225QEEWgE_AQ8-wmpz7ghNlM32Q=s311-p-k" height=25 alt="email icon"></span>
+										
+										<input id="txtname" class="form-control" type="text" name="cust_name" placeholder="Enter name">
+									</div>
+								</div>
+								<div class="col-sm-6 ">
+									<label for="txtemailaddress" class="form-label">Email</label>
+									
+									<div class="input-group mb-3">
+										<span class="input-group-text"><img src="https://lh3.googleusercontent.com/gInLDt3o8VsMN818Q43bDPvJZ916O-UPgBOjasOD_FbBriAK-4HJ9JzQn7K5AeMzoS_EU_Y05WiWbbddq0riPCL5AVjrgdblTNCq9hPDp4neK_gIjSNzpFphPV9X-jYboLG3zl0WvA=w2400" height=25 alt="email icon"></span>
+										
+										<input id="txtemailaddress" class="form-control" type="text" name="cust_email" placeholder="Enter email">
+									</div>								
+								</div>
+							</div>
+							
+							<label for="txtaddress" class="form-label">Delivery Address</label>
+							
+							<div class="input-group mb-3">
+								<span class="input-group-text"><img src="https://lh3.googleusercontent.com/GDfTjptKGOsqeaCY2g_ncD5cP-1KqKHw69sVXNruR2HIMtGugpK8xq1iJl9y-fqekzTZVyEv83POS-wGsGJL12t9Qn2RGVYkOd4DeVstVsXy3Z70QC-aN24orZm2BA-sarh28Njo6A=w2400" height=25 alt="address icon"></span>
+								
+								<textarea id="txtaddress" class="form-control" name="cust_addr" placeholder="Enter address"></textarea>
+							</div>
+
+							<button class="submitbtn" onSubmit="Checkout()">Place Order</button>	
+							
+						</div>
+					</div>
+					<div class="col-1"></div>
+				</div>
+			</div>
+		</form>
+		
+		
+		
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		<div class="separate">
+			<div class="row">
+				<div class="col-12">
+					<img src="https://lh3.googleusercontent.com/xkir0qRr1G7knsHHc7EsdCHm3U5T16I_tcLSCP29t4iIgVpyCrCwJsdg96ohX6LhCwRu_qjG4AVH1pEKTvlI5u6ADQO7rXSmkUnFPubch0NrbLCgkSTJ1NR4uT537k9nf7o2kWJQbw=w2400" class="img-fluid" alt="This is an image.">
+				</div>
+			</div>
+		</div>
+		
+		<div id="customerrow">
+			<h2 id="rowh" class="customertitle">Customer Feedback</h2>
+			
+			<br>
+			<div class="row no-gutters">
+			<div class="col-sm-1">
+            </div>			
+			<div class="col-sm-5 m-1 shadow cf">
+			<div class="row">
+			<div class="col-sm-4 cfpicc">
+			<img class="cfpic" src="https://i1.sndcdn.com/artworks-HdLqAWhQGXUXep2r-UhtcsQ-t500x500.jpg" alt="This is a cutie."/>
+			</div>
+			<div class="col-sm-8 cfname">
+			<h4 class="fdname">
+			Artem Pakpak
+			</h4>
+			</div>
+            </div>
+			<div class="container-fluid">
+			<img class="starslay" src="https://lh3.googleusercontent.com/WD2x1bCo84slnvumThEzDD3VS9YjstpLb-3_GJowZ8Cpo9BO2ZKK1IwsIEoBBQIIL6irdifXa4RlckVeZUNPTROMs7qfqVY7-jUi6qK6ABw29ih1cccOULfEkDteClzrfwGKqwTvhg=w2400" alt="This is an image.">
+			</div>
+			
+			<p>LOVE LOVE LOVE !!! New releases are always immediately available !!! Moreover, mas mahal kita LOVE LOVE LOVE YOU!</p>
+			</div>			
+	
+			<div class="col-sm-5 m-1 shadow  cf">
+			<div class="row">
+			<div class="col-sm-4 cfpicc">
+			<img class="cfpic" src="https://static1.personality-database.com/profile_images/ec8754ee0ed3488ea8adfeeeca218e64.png" alt="This is a cutie."/>
+			</div>
+			<div class="col-sm-8 cfname">
+			<h4 class="fdname">
+			Ethan Santos
+			</h4>
+			</div>
+            </div>
+			<div class="container-fluid">
+			<img class="starslay" src="https://lh3.googleusercontent.com/WD2x1bCo84slnvumThEzDD3VS9YjstpLb-3_GJowZ8Cpo9BO2ZKK1IwsIEoBBQIIL6irdifXa4RlckVeZUNPTROMs7qfqVY7-jUi6qK6ABw29ih1cccOULfEkDteClzrfwGKqwTvhg=w2400" alt="This is an image.">
+			</div>
+			<p>Go-to website for books!!! Recommended for all. Di nangblblock yung sellers tas super dami ng bubble wrap akala mo bubble wrap binili mo.</p>
+			</div>
+            <div class="col-sm-1">
+            </div>			
+			
+			</div>
+			
+			
+			</div>
+	
+		
+		<div id="footer">
+		
+		<div class="row gy-4 gx-5">
+                <div class="col-lg-4 col-md-6">
+                   <div id="footer1">
+					<img src="https://lh3.googleusercontent.com/7t6SfuW0XuJ541mUORI5AVPmwzvwYJWo6unOP_AeD9MYeKWBC-Qoicbv3bVbE0lTWIHtXO2XeIySERkJgR3z_D_Dx0OHYC4o0BdSl7erUAHJk4zDKYhrRDrYWAXvrnsP6jsTYShcjA=w2400" alt="This is an image." height=150>
+					<p>"A reader lives a thousand lives before he dies... The man who never reads lives only one.” - George R.R. Martin</p>
+					© Copyrights. 2022 Samat Chronicles. All rights reserved
+				</div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Quick Links</h5>
+						<a class="QuickLink" href="#">Home</a><br>
+						<a class="QuickLink" href="#romance">Romance</a><br>
+						<a class="QuickLink" href="#thriller">Thriller</a><br>
+						<a class="QuickLink" href="#sci_fi">Sci-fi</a><br>
+						<a class="QuickLink" href="#fant_asy">Fantasy</a><br>
+						<a class="QuickLink" href="aboutus.html">About Us</a><br>
+					</div>
+                <div class="col-lg-2 col-md-6">
+					<h5>Contact</h5>
+					++ 0123456789 <br>
+					2308 Maple Drive <br><br>
+					<img src="https://lh3.googleusercontent.com/YlQxa203Q_tYas_btnU6oXAAs3vBLROWUEz6UXm7uAlEm_8dhfY2diY1mQIsDNvCkczXk6vn4sr8JOK-znG9QYMLiTKOh0OhO4YVaJJLtlYjA4S3cv597ufBUdiQDq8h7Xn9P_1szw=s265-p-k" alt="This is an image." height=30>
+					<img src="https://lh3.googleusercontent.com/jB40dpntbt5AG1UHOrvyqV29FoVu5gzuoWywENsaAq3P4ilEOpRXmbu6jyKCCYFGe_bok2jvPLp_kbsKKX4kHpyjn-4ayUja-SoV7KHlGwPZ9UkCXr7b48BIOMMQ-XW2Q90ZOTH1vw=s265-p-k" alt="This is an image." height=30>
+					<img src="https://lh3.googleusercontent.com/lI-SV0rc7BssD7Qc5IkhVJEW04e5v4BpP1bKRGu9s1vRZixls13fnmCTJOaiKcxXLj0Jc2xXQZkpZWE-Cl0O6-g7hOFjGWaSAyotXx7r_4dJJoSH_jeNpXTyrRIcSGSC_r74R_hxkg=s264-p-k" alt="This is an image." height=30>
+					<img src="https://lh3.googleusercontent.com/rMwXU_d1F7jUdbgiwyeuTNwCJF6Jj5X7CUSAcpAx-iqzwgF90-_yAJDCEGrQuk_YeXCf65Ez_c9Mf8-ODQGiflbQiZWK8o_6knMNbJ0aXB4mXLnrohwi3UQOeMcsJfD-YGb8grI55w=s265-p-k" alt="This is an image." height=30>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                   
+                </div>
+            </div>
+    
+  </div>
+
+		<script>			
+			var cust_order = [];
+			
+			function AddProduct() {                
+				document.getElementById('CartList').innerHTML = "";
+				document.getElementById('Total').innerHTML = 0 + ".00 PhP (" + 0 + " Item/s in Cart)";
+				
+				var subtotal = 0;
+				var total = 0;
+				var ItemCount = 0;
+				
+				for (var i = 0; i < cust_order.length; i ++) {
+					subtotal = cust_order[i].prod_price;
+					total += subtotal;
+					ItemCount = i + 1;
+					
+					document.getElementById('CartList').innerHTML += '<div class="productt"><div class="productname">' + cust_order[i].prod_name + ' (' + cust_order[i].prod_price + '.00 PhP)</div>' + '<div class="deletebtn" onclick="RemoveProduct('+ i +')">X</div></div><br>';
+					document.getElementById('Total').innerHTML = total + ".00 PhP (" + ItemCount + " Item/s in Cart)";
+				}
+			}
+			
+			AddProduct();
+			
+			function AddPrideandPrejudice() {
+				var CartItem = {
+					prod_name: "Pride and Prejudice",
+					prod_price: 600.00
+				};
+				
+				cust_order.push(CartItem);
+				
+				AddProduct();
+			}
+			
+			function AddItEndsWithUs() {
+				var CartItem = {
+					prod_name: "It Ends With Us",
+					prod_price: 600.00
+				};
+				
+				cust_order.push(CartItem);
+				
+				AddProduct();
+			}
+			
+			function AddLittleWomen() {
+				var CartItem = {
+					prod_name: "Little Women",
+					prod_price: 600.00
+				};
+				
+				cust_order.push(CartItem);
+				
+				AddProduct();
+			}
+			
+			function AddMalibuRising() {
+				var CartItem = {
+					prod_name: "Malibu Rising",
+					prod_price: 600.00
+				};
+				
+				cust_order.push(CartItem);
+				
+				AddProduct();
+			}
+			
+			function AddTheWeddingDate() {
+				var CartItem = {
+					prod_name: "The Wedding Date",
+					prod_price: 600.00
+				};
+				
+				cust_order.push(CartItem);
+				
+				AddProduct();
+			}
+			
+			function AddTheSummerofBrokenRules() {
+				var CartItem = {
+					prod_name: "The Summer of Broken Rules",
+					prod_price: 600.00
+				};
+				
+				cust_order.push(CartItem);
+				
+				AddProduct();
+			}
+			
+			function AddHarryPotter() {
+				var CartItem = {
+					prod_name: "Harry Potter and the Order of the Phoenix",
+					prod_price: 550.00
+				};
+				
+				cust_order.push(CartItem);
+				
+				AddProduct();
+			}
+			
+			function AddSixofCrows() {
+				var CartItem = {
+					prod_name: "Six of Crows",
+					prod_price: 550.00
+				};
+				
+				cust_order.push(CartItem);
+				
+				AddProduct();
+			}
+			
+			function AddShadowandBone() {
+				var CartItem = {
+					prod_name: "Shadow and Bone",
+					prod_price: 550.00
+				};
+				
+				cust_order.push(CartItem);
+				
+				AddProduct();
+			}
+			
+			function AddMissPeregrine() {
+				var CartItem = {
+					prod_name: "Miss Peregrine's Home for Peculiar Children",
+					prod_price: 550.00
+				};
+				
+				cust_order.push(CartItem);
+				
+				AddProduct();
+			}
+			
+			function AddTheseHollowVows() {
+				var CartItem = {
+					prod_name: "These Hollow Vows",
+					prod_price: 550.00
+				};
+				
+				cust_order.push(CartItem);
+				
+				AddProduct();
+			}
+			
+			function AddTheSwordintheStone() {
+				var CartItem = {
+					prod_name: "The Sword in the Stone",
+					prod_price: 550.00
+				};
+				
+				cust_order.push(CartItem);
+				
+				AddProduct();
+			}
+			
+			function AddTheDoorsofEden() {
+				var CartItem = {
+					prod_name: "The Doors of Eden",
+					prod_price: 700.00
+				};
+				
+				cust_order.push(CartItem);
+				
+				AddProduct();
+			}
+			
+			function AddTheLordoftheRings() {
+				var CartItem = {
+					prod_name: "The Lord of the Rings: The Fellowship of the Ring",
+					prod_price: 700.00
+				};
+				
+				cust_order.push(CartItem);
+				
+				AddProduct();
+			}
+			
+			function AddEyesoftheVoid() {
+				var CartItem = {
+					prod_name: "Eyes of the Void",
+					prod_price: 700.00
+				};
+				
+				cust_order.push(CartItem);
+				
+				AddProduct();
+			}
+			
+			function AddTheThreeBodyProblem() {
+				var CartItem = {
+					prod_name: "The Three-Body Problem",
+					prod_price: 700.00
+				};
+				
+				cust_order.push(CartItem);
+				
+				AddProduct();
+			}
+			
+			function AddTheLastAstronaut() {
+				var CartItem = {
+					prod_name: "The Last Astronaut",
+					prod_price: 700.00
+				};
+				
+				cust_order.push(CartItem);
+				
+				AddProduct();
+			}
+			
+			function AddSkyWithoutStars() {
+				var CartItem = {
+					prod_name: "Sky Without Stars",
+					prod_price: 700.00
+				};
+				
+				cust_order.push(CartItem);
+				
+				AddProduct();
+			}
+			
+			function AddBirdBox() {
+				var CartItem = {
+					prod_name: "Bird Box",
+					prod_price: 450.00
+				};
+				
+				cust_order.push(CartItem);
+				
+				AddProduct();
+			}
+			
+			function AddIT() {
+				var CartItem = {
+					prod_name: "IT",
+					prod_price: 450.00
+				};
+				
+				cust_order.push(CartItem);
+				
+				AddProduct();
+			}
+			
+			function AddCoraline() {
+				var CartItem = {
+					prod_name: "Coraline",
+					prod_price: 450.00
+				};
+				
+				cust_order.push(CartItem);
+				
+				AddProduct();
+			}
+			
+			function AddTheDeathofJaneLawrence() {
+				var CartItem = {
+					prod_name: "The Death of Jane Lawrence",
+					prod_price: 450.00
+				};
+				
+				cust_order.push(CartItem);
+				
+				AddProduct();
+			}
+			
+			function AddTheHauntingofHillHouse() {
+				var CartItem = {
+					prod_name: "The Haunting of Hill House",
+					prod_price: 450.00
+				};
+				
+				cust_order.push(CartItem);
+				
+				AddProduct();
+			}
+			
+			function AddNothingbutBlackenedTeeth() {
+				var CartItem = {
+					prod_name: "Nothing but Blackened Teeth",
+					prod_price: 450.00
+				};
+				
+				cust_order.push(CartItem);
+				
+				AddProduct();
+			}
+			
+			function RemoveProduct(i) {
+				cust_order.splice(i,1);
+				
+				AddProduct();
+			}
+			
+			function Checkout() {
+				var s = JSON.stringify(cust_order);
+				
+				document.getElementById('txt_order').value = s;
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			function myFunction() {
+				var checkBox = document.getElementById("myCheck");
+				var text = document.getElementById("text");
+				
+				if (checkBox.checked == true){
+					text.style.display = "block";
+				} 
+				
+				else {
+					text.style.display = "none";
+				}
+			}
+		</script>
+	</body>
+</html>
